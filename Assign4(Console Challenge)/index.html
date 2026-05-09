@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-calculator"></i> Scientific Calculator</h1>
+            <p>Advanced mathematical operations and functions</p>
+        </header>
+        <div class="calculator">
+            <div class="display">
+                <input type="text" id="display" readonly placeholder="0">
+            </div>
+            <div class="buttons">
+                <button class="btn clear" title="Clear All"><i class="fas fa-trash"></i></button>
+                <button class="btn operator" title="Divide">÷</button>
+                <button class="btn operator" title="Multiply">×</button>
+                <button class="btn backspace" title="Backspace"><i class="fas fa-backspace"></i></button>
+
+                <button class="btn number">7</button>
+                <button class="btn number">8</button>
+                <button class="btn number">9</button>
+                <button class="btn operator" title="Subtract">−</button>
+
+                <button class="btn number">4</button>
+                <button class="btn number">5</button>
+                <button class="btn number">6</button>
+                <button class="btn operator" title="Add">+</button>
+
+                <button class="btn number">1</button>
+                <button class="btn number">2</button>
+                <button class="btn number">3</button>
+                <button class="btn equals" title="Calculate"><i class="fas fa-equals"></i></button>
+
+                <button class="btn number zero">0</button>
+                <button class="btn decimal">.</button>
+                <button class="btn advanced" data-op="percentage" title="Percentage">%</button>
+                <button class="btn advanced" data-op="sqrt" title="Square Root">√</button>
+
+                <button class="btn advanced" data-op="power" title="Power">xʸ</button>
+                <button class="btn advanced" data-op="factorial" title="Factorial">n!</button>
+                <button class="btn advanced" data-op="sin" title="Sine">sin</button>
+                <button class="btn advanced" data-op="cos" title="Cosine">cos</button>
+
+                <button class="btn advanced" data-op="tan" title="Tangent">tan</button>
+                <button class="btn advanced" data-op="log" title="Logarithm">log</button>
+                <button class="btn advanced" data-op="ln" title="Natural Log">ln</button>
+                <button class="btn advanced" data-op="exp" title="Exponential">eˣ</button>
+
+                <button class="btn memory" data-op="mc" title="Memory Clear">MC</button>
+                <button class="btn memory" data-op="mr" title="Memory Recall">MR</button>
+                <button class="btn memory" data-op="ms" title="Memory Store">MS</button>
+                <button class="btn memory" data-op="m+" title="Memory Add">M+</button>
+
+                <button class="btn memory" data-op="m-" title="Memory Subtract">M-</button>
+            </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
