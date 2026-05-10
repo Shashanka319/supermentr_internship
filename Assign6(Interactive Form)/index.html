@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karnataka Travel Explorer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="hero-image">
+            <h1>Karnataka Travel Explorer</h1>
+            <p>Discover the wonders of Karnataka, India's vibrant southern state. From the bustling city of Bangalore to the serene hills of Coorg, plan your perfect trip with our interactive form.</p>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Plan Your Karnataka Adventure</h2>
+        <form id="travelForm">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <span class="error" id="phoneError"></span>
+            </div>
+            <div class="form-group">
+                <label>Preferred Destinations:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="destinations" value="Bangalore"> 🏙️ Bangalore</label>
+                    <label><input type="checkbox" name="destinations" value="Mysore"> 🏰 Mysore</label>
+                    <label><input type="checkbox" name="destinations" value="Coorg"> 🌄 Coorg</label>
+                    <label><input type="checkbox" name="destinations" value="Hampi"> 🏛️ Hampi</label>
+                    <label><input type="checkbox" name="destinations" value="Goa Border"> 🏖️ Goa Border</label>
+                </div>
+                <span class="error" id="destinationsError"></span>
+            </div>
+            <div class="form-group">
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate" name="startDate" required>
+                <span class="error" id="startDateError"></span>
+            </div>
+            <div class="form-group">
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate" name="endDate" required>
+                <span class="error" id="endDateError"></span>
+            </div>
+            <div class="form-group">
+                <label for="travelers">Number of Travelers:</label>
+                <input type="number" id="travelers" name="travelers" min="1" required>
+                <span class="error" id="travelersError"></span>
+            </div>
+            <div class="form-group">
+                <label for="budget">Budget (INR):</label>
+                <select id="budget" name="budget" required>
+                    <option value="">Select Budget</option>
+                    <option value="under-5000">Under 5000</option>
+                    <option value="5000-10000">5000-10000</option>
+                    <option value="10000-20000">10000-20000</option>
+                    <option value="above-20000">Above 20000</option>
+                </select>
+                <span class="error" id="budgetError"></span>
+            </div>
+            <div class="form-group">
+                <label>Interests:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="interests" value="Adventure"> 🏔️ Adventure</label>
+                    <label><input type="checkbox" name="interests" value="Culture"> 🎭 Culture</label>
+                    <label><input type="checkbox" name="interests" value="Food"> 🍛 Food</label>
+                    <label><input type="checkbox" name="interests" value="Nature"> 🌿 Nature</label>
+                    <label><input type="checkbox" name="interests" value="History"> 📜 History</label>
+                </div>
+                <span class="error" id="interestsError"></span>
+            </div>
+            <button type="submit">Plan My Trip</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <footer>
+        <p>&copy; 2026 Karnataka Travel Explorer. Explore the beauty of Karnataka!</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
