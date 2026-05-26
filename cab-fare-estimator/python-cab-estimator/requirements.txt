@@ -1,0 +1,15 @@
+streamlit==1.28.1
+pandas==2.1.4
+numpy==1.24.3
+plotly==5.17.0
+matplotlib==3.7.2
+seaborn==0.12.2
+scipy==1.11.4
+openpyxl==3.1.2
+fastapi==0.104.1
+uvicorn==0.24.0
+python-multipart==0.0.6
+altair==5.1.2
+streamlit-plotly-events==0.0.6
+streamlit-aggrid==0.3.4
+streamlit-option-menu==0.3.6

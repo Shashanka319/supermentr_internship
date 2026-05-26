@@ -1,0 +1,44 @@
+
+{
+  // Use these launch configurations to start the Streamlit apps with the green Run button in VS Code
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Streamlit Auth App",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "streamlit",
+      "args": [
+        "run",
+        "streamlit_app_auth.py",
+        "--server.address",
+        "127.0.0.1",
+        "--server.port",
+        "8501"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Run Streamlit App (no-auth)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "streamlit",
+      "args": [
+        "run",
+        "streamlit_app.py",
+        "--server.address",
+        "127.0.0.1",
+        "--server.port",
+        "8502"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      }
+    }
+  ]
+}

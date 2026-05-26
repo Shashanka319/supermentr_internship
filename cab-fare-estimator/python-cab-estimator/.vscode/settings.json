@@ -1,0 +1,10 @@
+{
+    "python.defaultInterpreterPath": "python",
+    "python.terminal.activateEnvironment": true,
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "code-runner.executorMap": {
+        "python": "streamlit run"
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.clearPreviousOutput": true
+}
